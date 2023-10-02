@@ -1,5 +1,5 @@
 import os
-from db_connection import connection
+from db_connection import connect_to_db
 from dotenv import load_dotenv
 
 
@@ -15,4 +15,4 @@ def get_env_val():
 
 if __name__ == '__main__':
     env_var = get_env_val()
-    connection(env_var)
+    connect_to_db(env_var)
